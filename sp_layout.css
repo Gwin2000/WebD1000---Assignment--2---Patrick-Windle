@@ -33,10 +33,13 @@ img{
 }
 
 /* CSS Grid Styles */
+/* Grid column width 4x @ 25%*/
 body{
    display: grid;
    grid-template-columns: 25% 25% 25% 25%;
 }
+
+/* Large img */
 img#logo{
    width: 100%;
    grid-column: span 3;
@@ -59,6 +62,7 @@ nav.horizontal li{
 
 
 /* Section Styles */
+/* small img's */
 section img{
    width: 50%;
    margin: 0 auto 0 auto;
@@ -78,5 +82,18 @@ aside{
    padding-bottom: 30px;
 }
 
+aside:nth-of-type(odd){
+   justify-self: right;
+}
 
+aside img{
+   float: left;
+   width: 20%;
+}
 
+/* Text beneath profile pics*/
+aside p{
+   float: left;
+   width: 75%;
+   margin-left: 5%;
+}
