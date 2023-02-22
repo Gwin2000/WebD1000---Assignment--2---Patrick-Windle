@@ -28,10 +28,19 @@ body{
    height: 100%;
 }
 
-
+img{
+   display: block;
+}
 
 /* CSS Grid Styles */
-
+body{
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+}
+img#logo{
+   width: 100%;
+   grid-column: span 3;
+}
 
 
 
